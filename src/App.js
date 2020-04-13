@@ -1,11 +1,14 @@
 import React from "react";
 import "./styles.css";
-import Counter from "./Counter";
+import PlayCard from "./Experiment";
+import UseInput from "./Components/useInput";
 
 export default function App() {
   return (
     <div className="App">
-      <Counter />
+      <h1>React Hooks : The custom hooks.</h1>
+      <PlayCard />
+      <UseInput />
     </div>
   );
 }
