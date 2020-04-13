@@ -4,6 +4,7 @@ import Paper from "@material-ui/core/Paper";
 import AppBar from "@material-ui/core/AppBar";
 import ToolBar from "@material-ui/core/Toolbar";
 import Grid from "@material-ui/core/Grid";
+import TodoList from "../Components/TodoList";
 
 function Todo() {
   const IniValue = [
@@ -19,6 +20,7 @@ function Todo() {
           <Typography>Todo List</Typography>
         </ToolBar>
       </AppBar>
+      <TodoList todos={Todo} />
     </Paper>
   );
 }
