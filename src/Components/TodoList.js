@@ -8,9 +8,7 @@ import { Divider } from "@material-ui/core";
 function TodoList(props) {
   return (
     <React.Fragment>
-      <Paper
-        style={{ marginTop: "70px", maxWidth: "500px", margin: "60px auto" }}
-      >
+      <Paper style={{ marginTop: "30px", maxWidth: "500px" }}>
         <List style={{ padding: "20px" }}>
           {props.todos.map(todo => (
             <React.Fragment>
