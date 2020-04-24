@@ -1,5 +1,4 @@
 import React from "react";
-import { Paper } from "@material-ui/core";
 import { List } from "@material-ui/core";
 import { ListItem } from "@material-ui/core";
 import { ListItemText } from "@material-ui/core";
@@ -8,7 +7,7 @@ import { Divider } from "@material-ui/core";
 function TodoList(props) {
   return (
     <React.Fragment>
-      <Paper style={{ marginTop: "30px", maxWidth: "500px" }}>
+      <div style={{ marginTop: "30px", maxWidth: "500px" }}>
         <List style={{ padding: "20px" }}>
           {props.todos.map(todo => (
             <React.Fragment>
@@ -19,7 +18,7 @@ function TodoList(props) {
             </React.Fragment>
           ))}
         </List>
-      </Paper>
+      </div>
     </React.Fragment>
   );
 }
